@@ -3,7 +3,7 @@
 Domain-expert CUDA kernels vs frontier AI agents.
 
 - **What:** 6 CUDA kernel tasks, each replacing a real PyTorch operation.
-- **Why:** measure how close frontier AI agents get to a domain expert's hand-tuned kernels, and where they fall short. CUDA because it is the language most production AI kernels are written in; the gap measured here transfers to other kernel work.
+- **Why:** measure how frontier AI agents get to a domain expert's hand-tuned kernels, and where they fall short. CUDA because it is the language most production AI kernels are written in; the gap measured here transfers to other kernel work.
 - **How:** each model works alone in an agent loop (it can run commands, edit files and time its own kernel, like an engineer working): 20 minutes per try, 3 tries per task.
 - **Measured:** correctness on every input plus memory safety, and speed against two bars: PyTorch itself, and the expert kernel. All on the same GPU.
 
