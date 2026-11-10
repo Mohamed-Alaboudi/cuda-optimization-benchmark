@@ -1,0 +1,27 @@
+{
+ "trial": "gpt-6.1-sol-fp8_linear-try3",
+ "model": "gpt-6.1-sol",
+ "model_id": "gpt-6.1-sol",
+ "provider": "openai_responses",
+ "params": {
+  "reasoning": {
+   "effort": "high"
+  },
+  "max_output_tokens": 32000
+ },
+ "task": "fp8_linear",
+ "status": "done",
+ "turns": 17,
+ "seconds": 169.3,
+ "usd": 0.141337,
+ "started_et": "2026-11-08T19:14:36-05:00",
+ "ended_et": "2026-11-08T19:17:26-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": 1.0,
+ "error": null,
+ "try_number": 3,
+ "executor": "ssh",
+ "solution": "try3.cu",
+ "solution_sha256": "d9d35bb6452a6d9a46beb9cec3cf31f9db9f56784611364731e3869345f39eaa",
+ "prompt_sha256": "1e8d02c1afca796753e99bccce4fc91b02aa55c631f7697a11c214338524e0ce"
+}

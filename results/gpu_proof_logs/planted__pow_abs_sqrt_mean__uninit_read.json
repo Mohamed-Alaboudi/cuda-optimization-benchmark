@@ -1,0 +1,603 @@
+{
+ "task": "pow_abs_sqrt_mean",
+ "kernel": "/root/submission/graders/build/planted/pow_abs_sqrt_mean/uninit_read.cu",
+ "arch": "sm_120",
+ "host": "3168cd284eef",
+ "started": "2026-11-09 04:34:35 UTC",
+ "passes": [
+  {
+   "pass": 1,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.5887,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.303,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2198,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.44143380069591e-05
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.3293995511350458e-05
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.13,
+     "name": "b4_h4_w4"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.5872,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.3045,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2172,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 9.041194656060939e-06
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 6.020515292174128e-06
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.11,
+     "name": "b16_h4_w8"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.622,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2933,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2198,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.5275323383395037e-06
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 2.620532971692434e-07
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.11,
+     "name": "b1_h1_w1"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.4268,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2928,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2191,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 2.1945927008756264e-05
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.083001831842153e-05
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.09,
+     "name": "b3_h129_w257"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.4375,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2899,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2213,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 5.012612192087632e-05
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 3.351137129408515e-05
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.08,
+     "name": "b8_h64_w64_scale1000"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.452,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.3386,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2642,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 7.882480119000116e-06
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.7821279055010928e-06
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.09,
+     "name": "b16_h512_w512"
+    }
+   ]
+  }
+ ],
+ "compile": {
+  "ok": true,
+  "sha": "54d6d7486d24cb2955b9",
+  "lib": "/root/submission/graders/build/kernels/54d6d7486d24cb2955b9/kernel.so",
+  "seconds": 1.02,
+  "log_tail": ""
+ },
+ "sanitizer": [
+  {
+   "case": "b3_h129_w257",
+   "tool": "memcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.0,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "b3_h129_w257",
+   "tool": "racecheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.94,
+   "tail": "========= COMPUTE-SANITIZER\n========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)\n"
+  },
+  {
+   "case": "b3_h129_w257",
+   "tool": "synccheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.02,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "b3_h129_w257",
+   "tool": "initcheck",
+   "status": "ok",
+   "errors": 64,
+   "kernel_ran": true,
+   "seconds": 2.44,
+   "tail": " in kernel.so\n=========         Host Frame: __call__ in child.py:100\n=========         Host Frame: sanitize in child.py:223\n=========         Host Frame: main in child.py:274\n========= \n========= Uninitialized __global__ memory read of size 4 bytes\n=========     at planted_uninit(const float *, float *)+0x50\n=========     by thread (18,0,0) in block (0,0,0)\n=========     Address 0x7b3bbd800048\n=========     Saved host backtrace up to driver entry point at kernel launch time\n=========         Host Frame: reference(float const*, float const*, long, long, long, float*) [0x1a93] in kernel.so\n=========         Host Frame: __call__ in child.py:100\n=========         Host Frame: sanitize in child.py:223\n=========         Host Frame: main in child.py:274\n========= \n========= Uninitialized __global__ memory read of size 4 bytes\n=========     at planted_uninit(const float *, float *)+0x50\n=========     by thread (19,0,0) in block (0,0,0)\n=========     Address 0x7b3bbd80004c\n=========     Saved host backtrace up to driver entry point at kernel launch time\n=========         Host Frame: reference(float const*, float const*, long, long, long, float*) [0x1a93] in kernel.so\n=========         Host Frame: __call__ in child.py:100\n=========         Host Frame: sanitize in child.py:223\n=========         Host Frame: main in child.py:274\n========= \n========= ERROR SUMMARY: 64 errors\n========= ERROR SUMMARY: 44 errors were not printed. Use --print-limit option to adjust the number of printed errors\n"
+  }
+ ],
+ "seconds": 23.04,
+ "verdict": {
+  "status": "fail",
+  "label": "uninitialized read",
+  "failed_case": "b3_h129_w257",
+  "failed_check": "sanitizer:initcheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 2,
+  "passes": [
+   "pass"
+  ]
+ },
+ "key": "planted/pow_abs_sqrt_mean/uninit_read"
+}

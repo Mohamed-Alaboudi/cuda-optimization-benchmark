@@ -1,0 +1,33 @@
+# Harbor task layout; the eval itself runs through run_eval.py on one RunPod GPU.
+schema_version = "1.3"
+
+[task]
+name = "cuda-opt/efficient_kan"
+description = "KAN linear layer (KANLinear), forward"
+keywords = ["cuda", "kernel", "gpu"]
+
+[metadata]
+difficulty = "hard"
+category = "cuda-kernels"
+tries_per_model = 3
+
+[agent]
+timeout_sec = 1200.0          # 20 minutes per try
+
+[verifier]
+timeout_sec = 3600.0          # compile 300 s, each input 300 s, each sanitizer tool 900 s (graders/grade.py)
+environment_mode = "separate"
+
+[verifier.environment]
+docker_image = ""
+gpus = 1
+network_mode = "no-network"
+
+[environment]
+docker_image = ""
+build_timeout_sec = 1800.0
+gpus = 1
+gpu_types = ["RTX PRO 6000"]
+cpus = 8
+memory_mb = 65536
+network_mode = "allowlist"    # only the model API

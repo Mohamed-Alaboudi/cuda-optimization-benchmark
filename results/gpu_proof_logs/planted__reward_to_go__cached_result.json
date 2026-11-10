@@ -1,0 +1,550 @@
+{
+ "task": "reward_to_go",
+ "kernel": "/root/submission/graders/build/planted/reward_to_go/cached_result.cu",
+ "arch": "sm_120",
+ "host": "3168cd284eef",
+ "started": "2026-11-09 04:37:06 UTC",
+ "passes": [
+  {
+   "pass": 1,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.217,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0172,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0069,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      }
+     ],
+     "identical_repeat": false,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 3,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 3,
+        "shape_ok": true,
+        "bad": 3,
+        "worst": Infinity,
+        "first_bad": 0,
+        "bad_poison": 3,
+        "example": {
+         "index": 0,
+         "got": NaN,
+         "want": 0.7745435237884521
+        }
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.12,
+     "name": "B3_T1"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.216,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0184,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0062,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      }
+     ],
+     "identical_repeat": false,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 6993,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.004712333430207127
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 6993,
+        "shape_ok": true,
+        "bad": 6993,
+        "worst": Infinity,
+        "first_bad": 0,
+        "bad_poison": 6993,
+        "example": {
+         "index": 0,
+         "got": NaN,
+         "want": 3.274454196882503
+        }
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.19,
+     "name": "B7_T999"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.2031,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0184,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0067,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      }
+     ],
+     "identical_repeat": false,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 262144,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0057647407238371135
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 262144,
+        "shape_ok": true,
+        "bad": 262144,
+        "worst": Infinity,
+        "first_bad": 0,
+        "bad_poison": 262144,
+        "example": {
+         "index": 0,
+         "got": NaN,
+         "want": 48.13126097385919
+        }
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.21,
+     "name": "B256_T1024"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.2007,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0181,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0064,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      }
+     ],
+     "identical_repeat": false,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 8000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0054622379623913515
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 8000,
+        "shape_ok": true,
+        "bad": 8000,
+        "worst": Infinity,
+        "first_bad": 0,
+        "bad_poison": 8000,
+        "example": {
+         "index": 0,
+         "got": NaN,
+         "want": 50.580951228996256
+        }
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.71,
+     "name": "B1_T8000"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.2115,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0176,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 0
+       },
+       "host_ms": 0.0076,
+       "guards_ok": {
+        "reward": true,
+        "done": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "reward": true,
+        "done": true
+       }
+      }
+     ],
+     "identical_repeat": false,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 65536,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.03784910682842115
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 65536,
+        "shape_ok": true,
+        "bad": 65536,
+        "worst": Infinity,
+        "first_bad": 0,
+        "bad_poison": 65536,
+        "example": {
+         "index": 0,
+         "got": NaN,
+         "want": 2.1536816581970735
+        }
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.19,
+     "name": "B64_T1024"
+    }
+   ]
+  }
+ ],
+ "compile": {
+  "ok": true,
+  "sha": "4d4bd9d9b9523f979013",
+  "lib": "/root/submission/graders/build/kernels/4d4bd9d9b9523f979013/kernel.so",
+  "seconds": 1.13,
+  "log_tail": ""
+ },
+ "sanitizer": [
+  {
+   "case": "B7_T999",
+   "tool": "memcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.03,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "B7_T999",
+   "tool": "racecheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 3.03,
+   "tail": "========= COMPUTE-SANITIZER\n========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)\n"
+  },
+  {
+   "case": "B7_T999",
+   "tool": "synccheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.03,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "B7_T999",
+   "tool": "initcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.04,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  }
+ ],
+ "seconds": 21.67,
+ "verdict": {
+  "status": "fail",
+  "label": "stale state",
+  "failed_case": "B3_T1",
+  "failed_check": "call2:output",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": false,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ]
+ },
+ "key": "planted/reward_to_go/cached_result"
+}

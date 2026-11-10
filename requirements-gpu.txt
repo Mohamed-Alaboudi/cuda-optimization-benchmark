@@ -1,0 +1,6 @@
+# GPU host: grade (and the agent tries' own tests). Measured on the eval pod: Python 3.12.3, CUDA toolkit 12.8.93
+# (nvcc, compute-sanitizer), driver 580.178.04, image runpod/pytorch:1.5.1-cu1281-torch291-ubuntu2404.
+# No API keys on this machine.
+--extra-index-url https://download.pytorch.org/whl/cu128
+numpy==2.2.6
+torch==2.9.1+cu128

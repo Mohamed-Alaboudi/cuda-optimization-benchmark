@@ -1,0 +1,641 @@
+{
+ "task": "pow_abs_sqrt_mean",
+ "kernel": "/root/fixk/gpt-6.1-sol/pow_abs_sqrt_mean/try1.cu",
+ "arch": "sm_120",
+ "host": "562a64354c63",
+ "started": "2026-11-09 01:24:25 UTC",
+ "passes": [
+  {
+   "pass": 1,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.2642,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0203,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0081,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.44143380069591e-05
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.3293995511350458e-05
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.9,
+     "name": "b4_h4_w4"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1917,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0207,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0067,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 9.041194656060939e-06
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 6.020515292174128e-06
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.86,
+     "name": "b16_h4_w8"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.19,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0207,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0069,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.5275323383395037e-06
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 2.620532971692434e-07
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.88,
+     "name": "b1_h1_w1"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2038,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0236,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0093,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 2.1945927008756264e-05
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.151774095933423e-05
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.02,
+     "name": "b3_h129_w257"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2081,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0241,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0091,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 5.012612192087632e-05
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 3.351137129408515e-05
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.98,
+     "name": "b8_h64_w64_scale1000"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2069,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0279,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0126,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 7.882480119000116e-06
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.7821279055010928e-06
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.85,
+     "name": "b16_h512_w512"
+    }
+   ]
+  }
+ ],
+ "compile": {
+  "ok": true,
+  "sha": "b3400855d559eb06c5a3",
+  "lib": "/root/submission/graders/build/kernels/b3400855d559eb06c5a3/kernel.so",
+  "seconds": 0.83,
+  "log_tail": ""
+ },
+ "sanitizer": [
+  {
+   "case": "b3_h129_w257",
+   "tool": "memcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.74,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "b3_h129_w257",
+   "tool": "racecheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.67,
+   "tail": "========= COMPUTE-SANITIZER\n========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)\n"
+  },
+  {
+   "case": "b3_h129_w257",
+   "tool": "synccheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.71,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "b3_h129_w257",
+   "tool": "initcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.73,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  }
+ ],
+ "timing": {
+  "mode": "time",
+  "case": "b16_h512_w512",
+  "rounds": [
+   {
+    "kernel": 0.02055783771179818,
+    "expert": 0.0218217670917511,
+    "torch": 0.27365200221538544
+   },
+   {
+    "kernel": 0.020749090747399765,
+    "expert": 0.02186817319496818,
+    "torch": 0.27327199280261993
+   },
+   {
+    "kernel": 0.020759272981773724,
+    "expert": 0.021816363388841804,
+    "torch": 0.2736400067806244
+   }
+  ],
+  "median_ms": {
+   "kernel": 0.020749090747399765,
+   "expert": 0.0218217670917511,
+   "torch": 0.2736400067806244
+  },
+  "spread": {
+   "kernel": 0.009798465811408752,
+   "expert": 0.002374814042237494,
+   "torch": 0.001390590410924375
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "torch": "2.9.1+cu128",
+  "finished": true,
+  "proc": "ok",
+  "rc": 0,
+  "tail": "",
+  "seconds": 1.69
+ },
+ "seconds": 21.89,
+ "verdict": {
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 13.188,
+  "pct_of_expert": 105.2,
+  "kernel_ms": 0.020749090747399765,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ]
+ },
+ "key": "gpt-6.1-sol/pow_abs_sqrt_mean/try1"
+}

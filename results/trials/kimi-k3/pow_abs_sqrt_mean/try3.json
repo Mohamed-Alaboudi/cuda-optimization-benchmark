@@ -1,0 +1,25 @@
+{
+ "trial": "kimi-k3-pow_abs_sqrt_mean-try3",
+ "model": "kimi-k3",
+ "model_id": "k3",
+ "provider": "chat_completions",
+ "params": {
+  "reasoning_effort": "high",
+  "max_tokens": 32000
+ },
+ "task": "pow_abs_sqrt_mean",
+ "status": "done",
+ "turns": 7,
+ "seconds": 140.4,
+ "usd": 0.100157,
+ "started_et": "2026-11-08T19:14:26-05:00",
+ "ended_et": "2026-11-08T19:16:46-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 3,
+ "executor": "ssh",
+ "solution": "try3.cu",
+ "solution_sha256": "362bd85f13097aa249144ec1e50c77497920acab907449ce1c36b707811fff7e",
+ "prompt_sha256": "b7d360b5dc011cd7b008def1739389a5917ef15a1f836f5d96f7402cc953727d"
+}

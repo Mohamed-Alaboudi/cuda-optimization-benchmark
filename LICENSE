@@ -1,0 +1,12 @@
+Copyright (c) 2026 Mohamed Alaboudi. All rights reserved.
+
+This benchmark, including the tasks, the reference kernels, the grader, the
+agent-loop runner, the results and this README, is the property of Mohamed
+Alaboudi. It is shared for viewing and evaluation only. No permission is
+granted to copy, modify, redistribute, reuse or republish any part of it
+without prior written permission.
+
+The task operations are modeled on open-source libraries, which keep their
+own licences (see provenance.md): snnTorch (MIT), efficient-kan (MIT),
+TorchRL (MIT), NVIDIA TransformerEngine (Apache-2.0). Those licences cover
+the upstream operations, not this benchmark.

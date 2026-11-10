@@ -1,0 +1,48 @@
+{
+ "task": "leaky",
+ "signature": "void reference(const float* input_current, const float* mem0, const float* beta, const float* threshold, int32_t T, int32_t B, int32_t H, float* spikes, float* final_mem);",
+ "outputs": {
+  "spikes": {
+   "dtype": "float32",
+   "shape": [
+    "T",
+    "B",
+    "H"
+   ]
+  },
+  "final_mem": {
+   "dtype": "float32",
+   "shape": [
+    "B",
+    "H"
+   ]
+  }
+ },
+ "tolerance": {
+  "atol": 1e-06,
+  "rtol": 1e-05
+ },
+ "link": [],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "T8_B4_H33",
+   "seed": 21,
+   "T": 8,
+   "B": 4,
+   "H": 33,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "T16_B3_H65_mem0",
+   "seed": 22,
+   "T": 16,
+   "B": 3,
+   "H": 65,
+   "mem0_std": 0.1,
+   "small": true,
+   "timed": false
+  }
+ ]
+}

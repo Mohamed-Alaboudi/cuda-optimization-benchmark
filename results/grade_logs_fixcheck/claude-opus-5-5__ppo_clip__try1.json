@@ -1,0 +1,583 @@
+{
+ "task": "ppo_clip",
+ "kernel": "/root/fixk/claude-opus-5-5/ppo_clip/try1.cu",
+ "arch": "sm_120",
+ "host": "562a64354c63",
+ "started": "2026-11-09 01:21:39 UTC",
+ "passes": [
+  {
+   "pass": 1,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1824,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0198,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0074,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0007098058391254274
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0006623200240828701
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.91,
+     "name": "B1_T1_H1"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1936,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.021,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0072,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.00041610615268242537
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.000687197574118976
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.92,
+     "name": "B7_T13_H3"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1893,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0212,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0074,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.00036294870162952643
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0004438116475402932
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.94,
+     "name": "B1000_T333_H2"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1872,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0207,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0074,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0016897827503528848
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0021652066216999192
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.16,
+     "name": "B512_T256_H1_wide"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1826,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0203,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0072,
+       "guards_ok": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "current_log_prob": true,
+        "old_log_prob": true,
+        "advantage": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0004170366921261571
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 6,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0003294113356130399
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.09,
+     "name": "B4096_T256_H1"
+    }
+   ]
+  }
+ ],
+ "compile": {
+  "ok": true,
+  "sha": "050cb4bbb8cc3ac2158b",
+  "lib": "/root/submission/graders/build/kernels/050cb4bbb8cc3ac2158b/kernel.so",
+  "seconds": 0.87,
+  "log_tail": ""
+ },
+ "sanitizer": [
+  {
+   "case": "B1000_T333_H2",
+   "tool": "memcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.81,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "B1000_T333_H2",
+   "tool": "racecheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.55,
+   "tail": "========= COMPUTE-SANITIZER\n========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)\n"
+  },
+  {
+   "case": "B1000_T333_H2",
+   "tool": "synccheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.75,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "B1000_T333_H2",
+   "tool": "initcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.82,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  }
+ ],
+ "timing": {
+  "mode": "time",
+  "case": "B4096_T256_H1",
+  "rounds": [
+   {
+    "kernel": 0.030834370189242892,
+    "expert": 0.15662933389345807,
+    "torch": 0.22563199698925018
+   },
+   {
+    "kernel": 0.03080426653226217,
+    "expert": 0.15728266537189484,
+    "torch": 0.2214680016040802
+   },
+   {
+    "kernel": 0.030807225934920773,
+    "expert": 0.1580079992612203,
+    "torch": 0.21895040273666383
+   }
+  ],
+  "median_ms": {
+   "kernel": 0.030807225934920773,
+   "expert": 0.15728266537189484,
+   "torch": 0.2214680016040802
+  },
+  "spread": {
+   "kernel": 0.000977256087210998,
+   "expert": 0.008802089196778606,
+   "torch": 0.030516473909492747
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "torch": "2.9.1+cu128",
+  "finished": true,
+  "proc": "ok",
+  "rc": 0,
+  "tail": "",
+  "seconds": 2.02
+ },
+ "seconds": 21.62,
+ "verdict": {
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 7.189,
+  "pct_of_expert": 510.5,
+  "kernel_ms": 0.030807225934920773,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ]
+ },
+ "key": "claude-opus-5-5/ppo_clip/try1"
+}

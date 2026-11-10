@@ -1,0 +1,25 @@
+{
+ "trial": "kimi-k3-efficient_kan-try1",
+ "model": "kimi-k3",
+ "model_id": "k3",
+ "provider": "chat_completions",
+ "params": {
+  "reasoning_effort": "high",
+  "max_tokens": 32000
+ },
+ "task": "efficient_kan",
+ "status": "done",
+ "turns": 6,
+ "seconds": 272.5,
+ "usd": 0.179375,
+ "started_et": "2026-11-08T19:03:12-05:00",
+ "ended_et": "2026-11-08T19:07:45-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 1,
+ "executor": "ssh",
+ "solution": "try1.cu",
+ "solution_sha256": "f8677ce52c07aa102461fc0c1e7485fc5c1de752dfe1a3d7d6864e3d64c3c4ad",
+ "prompt_sha256": "4a3163471ad7f723e374b4b4ddcdd3fc66197f2ae306e709ca65260dae59ac23"
+}

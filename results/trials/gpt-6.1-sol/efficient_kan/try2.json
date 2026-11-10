@@ -1,0 +1,27 @@
+{
+ "trial": "gpt-6.1-sol-efficient_kan-try2",
+ "model": "gpt-6.1-sol",
+ "model_id": "gpt-6.1-sol",
+ "provider": "openai_responses",
+ "params": {
+  "reasoning": {
+   "effort": "high"
+  },
+  "max_output_tokens": 32000
+ },
+ "task": "efficient_kan",
+ "status": "done",
+ "turns": 47,
+ "seconds": 700.2,
+ "usd": 0.582329,
+ "started_et": "2026-11-08T19:07:38-05:00",
+ "ended_et": "2026-11-08T19:19:19-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": 1.0,
+ "error": null,
+ "try_number": 2,
+ "executor": "ssh",
+ "solution": "try2.cu",
+ "solution_sha256": "250668ddabdde311807fa6c27ad10f2e9053899e98ce5b51d35fb432ad79cdb4",
+ "prompt_sha256": "4a3163471ad7f723e374b4b4ddcdd3fc66197f2ae306e709ca65260dae59ac23"
+}

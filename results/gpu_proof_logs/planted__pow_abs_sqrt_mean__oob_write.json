@@ -1,0 +1,603 @@
+{
+ "task": "pow_abs_sqrt_mean",
+ "kernel": "/root/submission/graders/build/planted/pow_abs_sqrt_mean/oob_write.cu",
+ "arch": "sm_120",
+ "host": "3168cd284eef",
+ "started": "2026-11-09 04:33:49 UTC",
+ "passes": [
+  {
+   "pass": 1,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2129,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0286,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0136,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.44143380069591e-05
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.3293995511350458e-05
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.11,
+     "name": "b4_h4_w4"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2079,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0286,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0136,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 9.041194656060939e-06
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 6.020515292174128e-06
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.11,
+     "name": "b16_h4_w8"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.1984,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.03,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0141,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.5275323383395037e-06
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 2.620532971692434e-07
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.11,
+     "name": "b1_h1_w1"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2007,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0296,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0138,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 2.1945927008756264e-05
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.083001831842153e-05
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.12,
+     "name": "b3_h129_w257"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2007,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0286,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0141,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 5.012612192087632e-05
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 3.351137129408515e-05
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.13,
+     "name": "b8_h64_w64_scale1000"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0296,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0138,
+       "guards_ok": {
+        "inp": true,
+        "target": true,
+        "output": false
+       },
+       "inputs_unchanged": {
+        "inp": true,
+        "target": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 7.882480119000116e-06
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 1,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 1.7821279055010928e-06
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.09,
+     "name": "b16_h512_w512"
+    }
+   ]
+  }
+ ],
+ "compile": {
+  "ok": true,
+  "sha": "ee5ecb20dce99298a352",
+  "lib": "/root/submission/graders/build/kernels/ee5ecb20dce99298a352/kernel.so",
+  "seconds": 1.02,
+  "log_tail": ""
+ },
+ "sanitizer": [
+  {
+   "case": "b3_h129_w257",
+   "tool": "memcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.97,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "b3_h129_w257",
+   "tool": "racecheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.94,
+   "tail": "========= COMPUTE-SANITIZER\n========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)\n"
+  },
+  {
+   "case": "b3_h129_w257",
+   "tool": "synccheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.02,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "b3_h129_w257",
+   "tool": "initcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.04,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  }
+ ],
+ "seconds": 22.68,
+ "verdict": {
+  "status": "fail",
+  "label": "out-of-bounds write",
+  "failed_case": "b4_h4_w4",
+  "failed_check": "call1:guards",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ]
+ },
+ "key": "planted/pow_abs_sqrt_mean/oob_write"
+}

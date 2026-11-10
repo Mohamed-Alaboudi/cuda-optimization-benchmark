@@ -1,0 +1,1253 @@
+{
+ "task": "fp8_linear",
+ "kernel": "/root/submission/tasks/fp8_linear/solution/solution.cu",
+ "arch": "sm_120",
+ "host": "3168cd284eef",
+ "started": "2026-11-09 04:23:50 UTC",
+ "passes": [
+  {
+   "pass": 1,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 5,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 101.233,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0606,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0281,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 4096,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0007618467164406521
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 4096,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.31,
+     "name": "M1_K1024_N4096"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 5,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 116.9996,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0744,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0355,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 2048,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5102040816326531
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 2048,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5181347150259067
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.35,
+     "name": "M16_K64_N128"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 5,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 94.3661,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0653,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0381,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 999000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.6097560975609756
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 999000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5208333333333334
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.33,
+     "name": "M333_K1000_N3000"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 31.7824,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 27.107,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0865,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 8388608,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 8388608,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.49751243781094523
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.28,
+     "name": "M2048_K1024_N4096"
+    }
+   ]
+  },
+  {
+   "pass": 2,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 5,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 101.3889,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0608,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0272,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 4096,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0007618467164406521
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 4096,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.3,
+     "name": "M1_K1024_N4096"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 5,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 111.228,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0768,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0346,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 2048,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5102040816326531
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 2048,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5181347150259067
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.4,
+     "name": "M16_K64_N128"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 5,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 98.8798,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0703,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0308,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 999000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.6097560975609756
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 999000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5208333333333334
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.3,
+     "name": "M333_K1000_N3000"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 14.5268,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1454,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0548,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 8388608,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 8388608,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.49751243781094523
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.28,
+     "name": "M2048_K1024_N4096"
+    }
+   ]
+  },
+  {
+   "pass": 3,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 5,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 103.9643,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0598,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0279,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 4096,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0007618467164406521
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 4096,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.34,
+     "name": "M1_K1024_N4096"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 5,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 112.9587,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.077,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0343,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 2048,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5102040816326531
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 2048,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5181347150259067
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.36,
+     "name": "M16_K64_N128"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 5,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 94.2061,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0703,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 4
+       },
+       "host_ms": 0.0312,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 999000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.6097560975609756
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 999000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5208333333333334
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.3,
+     "name": "M333_K1000_N3000"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 14.2417,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1361,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0544,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 8388608,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 8388608,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.49751243781094523
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.22,
+     "name": "M2048_K1024_N4096"
+    }
+   ]
+  }
+ ],
+ "compile": {
+  "ok": true,
+  "sha": "6df66ea4e758fbd9a526",
+  "lib": "/root/submission/graders/build/kernels/6df66ea4e758fbd9a526/kernel.so",
+  "seconds": 1.62,
+  "log_tail": ""
+ },
+ "sanitizer": [
+  {
+   "case": "M16_K64_N128",
+   "tool": "memcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.2,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "M16_K64_N128",
+   "tool": "racecheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 3.11,
+   "tail": "========= COMPUTE-SANITIZER\n========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)\n"
+  },
+  {
+   "case": "M16_K64_N128",
+   "tool": "synccheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.2,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "M16_K64_N128",
+   "tool": "initcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.22,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  }
+ ],
+ "timing": {
+  "mode": "time",
+  "case": "M2048_K1024_N4096",
+  "rounds": [
+   {
+    "kernel": 0.02687999978661537,
+    "expert": 0.026863059576819927,
+    "torch": 0.33924798170725506
+   },
+   {
+    "kernel": 0.026907151395624336,
+    "expert": 0.026932235149776235,
+    "torch": 0.340336004892985
+   },
+   {
+    "kernel": 0.02688960007258824,
+    "expert": 0.026867199795586723,
+    "torch": 0.34036266803741455
+   }
+  ],
+  "median_ms": {
+   "kernel": 0.02688960007258824,
+   "expert": 0.026867199795586723,
+   "torch": 0.340336004892985
+  },
+  "spread": {
+   "kernel": 0.0010101045098402928,
+   "expert": 0.002575118919663222,
+   "torch": 0.0032857567038420132
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "torch": "2.9.1+cu128",
+  "finished": true,
+  "proc": "ok",
+  "rc": 0,
+  "tail": "",
+  "seconds": 2.17
+ },
+ "seconds": 41.31,
+ "verdict": {
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 12.657,
+  "pct_of_expert": 99.9,
+  "kernel_ms": 0.02688960007258824,
+  "identical_repeat": true,
+  "allocs_per_call": 5,
+  "passes": [
+   "pass",
+   "pass",
+   "pass"
+  ]
+ },
+ "key": "expert/fp8_linear"
+}

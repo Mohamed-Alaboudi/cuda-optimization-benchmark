@@ -1,0 +1,25 @@
+{
+ "trial": "kimi-k3-fp8_linear-try2",
+ "model": "kimi-k3",
+ "model_id": "k3",
+ "provider": "chat_completions",
+ "params": {
+  "reasoning_effort": "high",
+  "max_tokens": 32000
+ },
+ "task": "fp8_linear",
+ "status": "done",
+ "turns": 11,
+ "seconds": 266.9,
+ "usd": 0.314527,
+ "started_et": "2026-11-08T19:11:21-05:00",
+ "ended_et": "2026-11-08T19:15:48-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 2,
+ "executor": "ssh",
+ "solution": "try2.cu",
+ "solution_sha256": "c89a2c1b15f7abdef6e32373bd1bc8503658f91e167c2f35fd571f373b83ace6",
+ "prompt_sha256": "1e8d02c1afca796753e99bccce4fc91b02aa55c631f7697a11c214338524e0ce"
+}

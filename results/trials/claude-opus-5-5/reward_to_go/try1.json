@@ -1,0 +1,27 @@
+{
+ "trial": "claude-opus-5-5-reward_to_go-try1",
+ "model": "claude-opus-5-5",
+ "model_id": "claude-opus-5-5",
+ "provider": "anthropic_api",
+ "params": {
+  "output_config": {
+   "effort": "high"
+  },
+  "max_tokens": 32000
+ },
+ "task": "reward_to_go",
+ "status": "done",
+ "turns": 4,
+ "seconds": 256.3,
+ "usd": 0.118172,
+ "started_et": "2026-11-08T19:04:57-05:00",
+ "ended_et": "2026-11-08T19:09:13-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 1,
+ "executor": "ssh",
+ "solution": "try1.cu",
+ "solution_sha256": "095464f86a7a67af05465578fdd350f40ba0defba197fe45edbeefb7c254e033",
+ "prompt_sha256": "652588873530cfe5dd662a0e4fb2274e1c4545902b1f92603797e76be75397cb"
+}

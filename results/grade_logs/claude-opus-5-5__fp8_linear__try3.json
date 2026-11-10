@@ -1,0 +1,489 @@
+{
+ "task": "fp8_linear",
+ "kernel": "results/trials/claude-opus-5-5/fp8_linear/try3.cu",
+ "arch": "sm_120",
+ "host": "562a64354c63",
+ "started": "2026-11-09 01:01:46 UTC",
+ "passes": [
+  {
+   "pass": 1,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1266,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0196,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0074,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 4096,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 4096,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.85,
+     "name": "M1_K1024_N4096"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1292,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0205,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0069,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 2048,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 2048,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.0,
+     "name": "M16_K64_N128"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1268,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0193,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0069,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 999000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.4694835680751174
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 999000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.49751243781094523
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 1.89,
+     "name": "M333_K1000_N3000"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.1321,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0184,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 1
+       },
+       "host_ms": 0.0074,
+       "guards_ok": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true,
+        "output": true
+       },
+       "inputs_unchanged": {
+        "x_fp8": true,
+        "w_fp8": true,
+        "bias": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "output": {
+        "n": 8388608,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.5
+       }
+      },
+      "call2": {
+       "output": {
+        "n": 8388608,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.49751243781094523
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.03,
+     "name": "M2048_K1024_N4096"
+    }
+   ]
+  }
+ ],
+ "compile": {
+  "ok": true,
+  "sha": "f36ca7e9d24c5fabaf22",
+  "lib": "/root/submission/graders/build/kernels/f36ca7e9d24c5fabaf22/kernel.so",
+  "seconds": 1.37,
+  "log_tail": ""
+ },
+ "sanitizer": [
+  {
+   "case": "M16_K64_N128",
+   "tool": "memcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.78,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "M16_K64_N128",
+   "tool": "racecheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.51,
+   "tail": "========= COMPUTE-SANITIZER\n========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)\n"
+  },
+  {
+   "case": "M16_K64_N128",
+   "tool": "synccheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.85,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "M16_K64_N128",
+   "tool": "initcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.77,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  }
+ ],
+ "timing": {
+  "mode": "time",
+  "case": "M2048_K1024_N4096",
+  "rounds": [
+   {
+    "kernel": 0.11266666650772095,
+    "expert": 0.11113777425554064,
+    "torch": 0.32195200522740686
+   },
+   {
+    "kernel": 0.11270044247309366,
+    "expert": 0.11167999770906237,
+    "torch": 0.3224586645762126
+   },
+   {
+    "kernel": 0.11260800229178534,
+    "expert": 0.11161066426171197,
+    "torch": 0.33136000235875446
+   }
+  ],
+  "median_ms": {
+   "kernel": 0.11266666650772095,
+   "expert": 0.11161066426171197,
+   "torch": 0.3224586645762126
+  },
+  "spread": {
+   "kernel": 0.0008209024174745672,
+   "expert": 0.00487884031468,
+   "torch": 0.029221737956570237
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "torch": "2.9.1+cu128",
+  "finished": true,
+  "proc": "ok",
+  "rc": 0,
+  "tail": "",
+  "seconds": 2.01
+ },
+ "seconds": 17.69,
+ "verdict": {
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 2.862,
+  "pct_of_expert": 99.1,
+  "kernel_ms": 0.11266666650772095,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ]
+ },
+ "key": "claude-opus-5-5/fp8_linear/try3"
+}

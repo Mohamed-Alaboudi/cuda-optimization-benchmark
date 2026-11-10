@@ -1,0 +1,69 @@
+{
+ "task": "efficient_kan",
+ "signature": "void reference(const float* x, const float* grid, const float* base_weight, const float* spline_weight, const float* spline_scaler, int32_t grid_size, int32_t spline_order, int32_t B, int32_t I, int32_t O, float* out);",
+ "outputs": {
+  "out": {
+   "dtype": "float32",
+   "shape": [
+    "B",
+    "O"
+   ]
+  }
+ },
+ "tolerance": {
+  "atol": 1e-05,
+  "rtol": 1e-05
+ },
+ "link": [
+  "-lcublas"
+ ],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "B1_I256_O512",
+   "seed": 301,
+   "B": 1,
+   "I": 256,
+   "O": 512,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "B1000_I256_O512",
+   "seed": 302,
+   "B": 1000,
+   "I": 256,
+   "O": 512,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "B64_I100_O300",
+   "seed": 303,
+   "B": 64,
+   "I": 100,
+   "O": 300,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "B512_I256_O512_wide_x",
+   "seed": 304,
+   "B": 512,
+   "I": 256,
+   "O": 512,
+   "x_range": 2.0,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "B4096_I256_O512",
+   "seed": 305,
+   "B": 4096,
+   "I": 256,
+   "O": 512,
+   "small": false,
+   "timed": true
+  }
+ ]
+}

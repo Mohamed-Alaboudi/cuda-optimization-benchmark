@@ -1,0 +1,27 @@
+{
+ "trial": "claude-opus-5-5-ppo_clip-try3",
+ "model": "claude-opus-5-5",
+ "model_id": "claude-opus-5-5",
+ "provider": "anthropic_api",
+ "params": {
+  "output_config": {
+   "effort": "high"
+  },
+  "max_tokens": 32000
+ },
+ "task": "ppo_clip",
+ "status": "done",
+ "turns": 10,
+ "seconds": 101.2,
+ "usd": 0.25594,
+ "started_et": "2026-11-08T19:15:41-05:00",
+ "ended_et": "2026-11-08T19:17:23-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 3,
+ "executor": "ssh",
+ "solution": "try3.cu",
+ "solution_sha256": "e3ff2c9546e2686fd78cb6cad84fc09f37222ed9ba215b7d459e1c09ffba2c9f",
+ "prompt_sha256": "40fd9b9d21f1533e6ea522bc839658a932ac0a2b80054ac6e6a0a8420a2e08cb"
+}

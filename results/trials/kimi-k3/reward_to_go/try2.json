@@ -1,0 +1,25 @@
+{
+ "trial": "kimi-k3-reward_to_go-try2",
+ "model": "kimi-k3",
+ "model_id": "k3",
+ "provider": "chat_completions",
+ "params": {
+  "reasoning_effort": "high",
+  "max_tokens": 32000
+ },
+ "task": "reward_to_go",
+ "status": "done",
+ "turns": 8,
+ "seconds": 152.0,
+ "usd": 0.100597,
+ "started_et": "2026-11-08T19:13:54-05:00",
+ "ended_et": "2026-11-08T19:16:26-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 2,
+ "executor": "ssh",
+ "solution": "try2.cu",
+ "solution_sha256": "8e56efc7a52cc8efcc7375924d130f9cc6003134641cef5997b62943b34a8ba2",
+ "prompt_sha256": "652588873530cfe5dd662a0e4fb2274e1c4545902b1f92603797e76be75397cb"
+}

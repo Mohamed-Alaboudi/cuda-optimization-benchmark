@@ -1,0 +1,42 @@
+{
+ "task": "efficient_kan",
+ "signature": "void reference(const float* x, const float* grid, const float* base_weight, const float* spline_weight, const float* spline_scaler, int32_t grid_size, int32_t spline_order, int32_t B, int32_t I, int32_t O, float* out);",
+ "outputs": {
+  "out": {
+   "dtype": "float32",
+   "shape": [
+    "B",
+    "O"
+   ]
+  }
+ },
+ "tolerance": {
+  "atol": 1e-05,
+  "rtol": 1e-05
+ },
+ "link": [
+  "-lcublas"
+ ],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "B8_I16_O24",
+   "seed": 31,
+   "B": 8,
+   "I": 16,
+   "O": 24,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "B5_I7_O9_wide_x",
+   "seed": 32,
+   "B": 5,
+   "I": 7,
+   "O": 9,
+   "x_range": 2.0,
+   "small": true,
+   "timed": false
+  }
+ ]
+}

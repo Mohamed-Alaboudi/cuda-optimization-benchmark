@@ -1,0 +1,27 @@
+{
+ "trial": "claude-opus-5-5-fp8_linear-try1",
+ "model": "claude-opus-5-5",
+ "model_id": "claude-opus-5-5",
+ "provider": "anthropic_api",
+ "params": {
+  "output_config": {
+   "effort": "high"
+  },
+  "max_tokens": 32000
+ },
+ "task": "fp8_linear",
+ "status": "done",
+ "turns": 8,
+ "seconds": 104.9,
+ "usd": 0.208745,
+ "started_et": "2026-11-08T19:03:12-05:00",
+ "ended_et": "2026-11-08T19:04:57-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 1,
+ "executor": "ssh",
+ "solution": "try1.cu",
+ "solution_sha256": "ed76baff3951b54e085d39c3426d33321c97ed907a6925e0c9da9347d5798a04",
+ "prompt_sha256": "1e8d02c1afca796753e99bccce4fc91b02aa55c631f7697a11c214338524e0ce"
+}

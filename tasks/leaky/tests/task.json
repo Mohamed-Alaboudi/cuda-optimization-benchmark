@@ -1,0 +1,79 @@
+{
+ "task": "leaky",
+ "signature": "void reference(const float* input_current, const float* mem0, const float* beta, const float* threshold, int32_t T, int32_t B, int32_t H, float* spikes, float* final_mem);",
+ "outputs": {
+  "spikes": {
+   "dtype": "float32",
+   "shape": [
+    "T",
+    "B",
+    "H"
+   ]
+  },
+  "final_mem": {
+   "dtype": "float32",
+   "shape": [
+    "B",
+    "H"
+   ]
+  }
+ },
+ "tolerance": {
+  "atol": 1e-06,
+  "rtol": 1e-05
+ },
+ "link": [],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "T1_B1_H1021",
+   "seed": 201,
+   "T": 1,
+   "B": 1,
+   "H": 1021,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "T33_B65_H129_mem0",
+   "seed": 202,
+   "T": 33,
+   "B": 65,
+   "H": 129,
+   "mem0_std": 0.1,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "T160_B85_H200",
+   "seed": 203,
+   "T": 160,
+   "B": 85,
+   "H": 200,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "T32_B64_H128_beta_out_of_range",
+   "seed": 204,
+   "T": 32,
+   "B": 64,
+   "H": 128,
+   "beta_range": [
+    -0.2,
+    1.2
+   ],
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "T256_B512_H1024",
+   "seed": 205,
+   "T": 256,
+   "B": 512,
+   "H": 1024,
+   "small": false,
+   "timed": true
+  }
+ ]
+}

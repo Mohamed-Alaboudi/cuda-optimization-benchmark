@@ -1,0 +1,27 @@
+{
+ "trial": "claude-opus-5-5-leaky-try1",
+ "model": "claude-opus-5-5",
+ "model_id": "claude-opus-5-5",
+ "provider": "anthropic_api",
+ "params": {
+  "output_config": {
+   "effort": "high"
+  },
+  "max_tokens": 32000
+ },
+ "task": "leaky",
+ "status": "done",
+ "turns": 5,
+ "seconds": 53.4,
+ "usd": 0.114713,
+ "started_et": "2026-11-08T19:03:12-05:00",
+ "ended_et": "2026-11-08T19:04:05-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 1,
+ "executor": "ssh",
+ "solution": "try1.cu",
+ "solution_sha256": "2b7289af700b7a1348f49c032a3556d9212ffdf1d6f455dbb73dbc112c5aad69",
+ "prompt_sha256": "650d421741c1947d9258543a75b5217663d22564055bf863b762c40a6cef647e"
+}

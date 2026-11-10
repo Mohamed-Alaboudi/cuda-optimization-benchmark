@@ -1,0 +1,27 @@
+{
+ "trial": "gpt-6.1-sol-ppo_clip-try3",
+ "model": "gpt-6.1-sol",
+ "model_id": "gpt-6.1-sol",
+ "provider": "openai_responses",
+ "params": {
+  "reasoning": {
+   "effort": "high"
+  },
+  "max_output_tokens": 32000
+ },
+ "task": "ppo_clip",
+ "status": "done",
+ "turns": 11,
+ "seconds": 114.5,
+ "usd": 0.086148,
+ "started_et": "2026-11-08T19:15:10-05:00",
+ "ended_et": "2026-11-08T19:17:05-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": 1.0,
+ "error": null,
+ "try_number": 3,
+ "executor": "ssh",
+ "solution": "try3.cu",
+ "solution_sha256": "244aba0bf08addbca8ec582d1c3f6ec17df4e80614aab1d910a09f9e4d8bdd51",
+ "prompt_sha256": "40fd9b9d21f1533e6ea522bc839658a932ac0a2b80054ac6e6a0a8420a2e08cb"
+}

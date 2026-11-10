@@ -1,0 +1,720 @@
+{
+ "task": "leaky",
+ "kernel": "/root/submission/graders/build/planted/leaky/wrong_value.cu",
+ "arch": "sm_120",
+ "host": "3168cd284eef",
+ "started": "2026-11-09 04:31:18 UTC",
+ "passes": [
+  {
+   "pass": 1,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.3016,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.03,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0141,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "spikes": {
+        "n": 1021,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 1021,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      },
+      "call2": {
+       "spikes": {
+        "n": 1021,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 1021,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.1,
+     "name": "T1_B1_H1021"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2964,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0284,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0141,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "spikes": {
+        "n": 276705,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 8385,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      },
+      "call2": {
+       "spikes": {
+        "n": 276705,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 8385,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.12,
+     "name": "T33_B65_H129_mem0"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.2964,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0296,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0143,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "spikes": {
+        "n": 2720000,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 17000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      },
+      "call2": {
+       "spikes": {
+        "n": 2720000,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 17000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.15,
+     "name": "T160_B85_H200"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.3023,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0288,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0148,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "spikes": {
+        "n": 262144,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 8192,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      },
+      "call2": {
+       "spikes": {
+        "n": 262144,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 8192,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.11,
+     "name": "T32_B64_H128_beta_out_of_range"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 33
+       },
+       "host_ms": 0.3729,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 33
+       },
+       "host_ms": 0.0973,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 33
+       },
+       "host_ms": 0.0834,
+       "guards_ok": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true,
+        "spikes": true,
+        "final_mem": true
+       },
+       "inputs_unchanged": {
+        "input_current": true,
+        "mem0": true,
+        "beta": true,
+        "threshold": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "spikes": {
+        "n": 134217728,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 524288,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      },
+      "call2": {
+       "spikes": {
+        "n": 134217728,
+        "shape_ok": true,
+        "bad": 1,
+        "worst": 12345000000.0,
+        "first_bad": 0,
+        "bad_poison": 0,
+        "example": {
+         "index": 0,
+         "got": 12345.0,
+         "want": 0.0
+        }
+       },
+       "final_mem": {
+        "n": 524288,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.2,
+     "name": "T256_B512_H1024"
+    }
+   ]
+  }
+ ],
+ "compile": {
+  "ok": true,
+  "sha": "81bc03e64da192304a9b",
+  "lib": "/root/submission/graders/build/kernels/81bc03e64da192304a9b/kernel.so",
+  "seconds": 1.21,
+  "log_tail": ""
+ },
+ "sanitizer": [
+  {
+   "case": "T33_B65_H129_mem0",
+   "tool": "memcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.03,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "T33_B65_H129_mem0",
+   "tool": "racecheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.95,
+   "tail": "========= COMPUTE-SANITIZER\n========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)\n"
+  },
+  {
+   "case": "T33_B65_H129_mem0",
+   "tool": "synccheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.03,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "T33_B65_H129_mem0",
+   "tool": "initcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.04,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  }
+ ],
+ "seconds": 20.95,
+ "verdict": {
+  "status": "fail",
+  "label": "wrong value",
+  "failed_case": "T1_B1_H1021",
+  "failed_check": "call1:spikes",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ]
+ },
+ "key": "planted/leaky/wrong_value"
+}

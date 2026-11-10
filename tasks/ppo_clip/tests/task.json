@@ -1,0 +1,67 @@
+{
+ "task": "ppo_clip",
+ "signature": "void reference(const int32_t B, const int32_t T, const int32_t H, const float* current_log_prob, const float* old_log_prob, const float* advantage, const float clip_epsilon, float* output);",
+ "outputs": {
+  "output": {
+   "dtype": "float32",
+   "shape": [
+    6
+   ]
+  }
+ },
+ "tolerance": {
+  "atol": 1e-05,
+  "rtol": 0.0001
+ },
+ "link": [],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "B1_T1_H1",
+   "seed": 501,
+   "B": 1,
+   "T": 1,
+   "H": 1,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "B7_T13_H3",
+   "seed": 502,
+   "B": 7,
+   "T": 13,
+   "H": 3,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "B1000_T333_H2",
+   "seed": 503,
+   "B": 1000,
+   "T": 333,
+   "H": 2,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "B512_T256_H1_wide",
+   "seed": 504,
+   "B": 512,
+   "T": 256,
+   "H": 1,
+   "delta_std": 1.0,
+   "clip_epsilon": 0.1,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "B4096_T256_H1",
+   "seed": 505,
+   "B": 4096,
+   "T": 256,
+   "H": 1,
+   "small": false,
+   "timed": true
+  }
+ ]
+}

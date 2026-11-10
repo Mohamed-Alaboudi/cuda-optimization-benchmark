@@ -1,0 +1,643 @@
+{
+ "task": "efficient_kan",
+ "kernel": "results/trials/claude-opus-5-5/efficient_kan/try3.cu",
+ "arch": "sm_120",
+ "host": "562a64354c63",
+ "started": "2026-11-09 01:00:47 UTC",
+ "passes": [
+  {
+   "pass": 1,
+   "cases": [
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 98.3539,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.057,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0188,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "out": {
+        "n": 512,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.015941522821836317
+       }
+      },
+      "call2": {
+       "out": {
+        "n": 512,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.017813886096006024
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.08,
+     "name": "B1_I256_O512"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 90.4164,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0768,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0255,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "out": {
+        "n": 512000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.06759774014106823
+       }
+      },
+      "call2": {
+       "out": {
+        "n": 512000,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.06849021372705445
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.09,
+     "name": "B1000_I256_O512"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 106.1273,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0942,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.026,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "out": {
+        "n": 19200,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.020001017880559788
+       }
+      },
+      "call2": {
+       "out": {
+        "n": 19200,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.021662156113204337
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.15,
+     "name": "B64_I100_O300"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 112.0949,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0741,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0241,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "out": {
+        "n": 262144,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.10468632644827888
+       }
+      },
+      "call2": {
+       "out": {
+        "n": 262144,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.0920310717034778
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.18,
+     "name": "B512_I256_O512_wide_x"
+    },
+    {
+     "mode": "check",
+     "counter": true,
+     "calls": [
+      {
+       "call": 1,
+       "count": {
+        "alloc": 2,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 108.5157,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 2,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0842,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      },
+      {
+       "call": 3,
+       "count": {
+        "alloc": 0,
+        "host_copy": 0,
+        "device_sync": 0,
+        "launch": 2
+       },
+       "host_ms": 0.0293,
+       "guards_ok": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true,
+        "out": true
+       },
+       "inputs_unchanged": {
+        "x": true,
+        "grid": true,
+        "base_weight": true,
+        "spline_weight": true,
+        "spline_scaler": true
+       }
+      }
+     ],
+     "identical_repeat": true,
+     "compare": {
+      "call1": {
+       "out": {
+        "n": 2097152,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.12017556776826759
+       }
+      },
+      "call2": {
+       "out": {
+        "n": 2097152,
+        "shape_ok": true,
+        "bad": 0,
+        "worst": 0.1037059718744522
+       }
+      }
+     },
+     "finished": true,
+     "proc": "ok",
+     "rc": 0,
+     "tail": "",
+     "seconds": 2.11,
+     "name": "B4096_I256_O512"
+    }
+   ]
+  }
+ ],
+ "compile": {
+  "ok": true,
+  "sha": "7ddb4ef4af4b1faf5b08",
+  "lib": "/root/submission/graders/build/kernels/7ddb4ef4af4b1faf5b08/kernel.so",
+  "seconds": 1.22,
+  "log_tail": ""
+ },
+ "sanitizer": [
+  {
+   "case": "B64_I100_O300",
+   "tool": "memcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.12,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "B64_I100_O300",
+   "tool": "racecheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 2.77,
+   "tail": "========= COMPUTE-SANITIZER\n========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)\n"
+  },
+  {
+   "case": "B64_I100_O300",
+   "tool": "synccheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.89,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  },
+  {
+   "case": "B64_I100_O300",
+   "tool": "initcheck",
+   "status": "ok",
+   "errors": 0,
+   "kernel_ran": true,
+   "seconds": 1.91,
+   "tail": "========= COMPUTE-SANITIZER\n========= ERROR SUMMARY: 0 errors\n"
+  }
+ ],
+ "timing": {
+  "mode": "time",
+  "case": "B4096_I256_O512",
+  "rounds": [
+   {
+    "kernel": 0.37172800302505493,
+    "expert": 0.36189333597819007,
+    "torch": 1.2939839959144592
+   },
+   {
+    "kernel": 0.3715413411458333,
+    "expert": 0.3620213270187378,
+    "torch": 1.2977440357208252
+   },
+   {
+    "kernel": 0.3712640007336934,
+    "expert": 0.3642879923184713,
+    "torch": 1.3091040253639221
+   }
+  ],
+  "median_ms": {
+   "kernel": 0.3715413411458333,
+   "expert": 0.3620213270187378,
+   "torch": 1.2977440357208252
+  },
+  "spread": {
+   "kernel": 0.0012497906892252608,
+   "expert": 0.006617022482076296,
+   "torch": 0.011684865884896478
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "torch": "2.9.1+cu128",
+  "finished": true,
+  "proc": "ok",
+  "rc": 0,
+  "tail": "",
+  "seconds": 2.17
+ },
+ "seconds": 21.46,
+ "verdict": {
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 3.493,
+  "pct_of_expert": 97.4,
+  "kernel_ms": 0.3715413411458333,
+  "identical_repeat": true,
+  "allocs_per_call": 2,
+  "passes": [
+   "pass"
+  ]
+ },
+ "key": "claude-opus-5-5/efficient_kan/try3"
+}

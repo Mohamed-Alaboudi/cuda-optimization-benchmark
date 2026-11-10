@@ -1,0 +1,27 @@
+{
+ "trial": "claude-opus-5-5-efficient_kan-try3",
+ "model": "claude-opus-5-5",
+ "model_id": "claude-opus-5-5",
+ "provider": "anthropic_api",
+ "params": {
+  "output_config": {
+   "effort": "high"
+  },
+  "max_tokens": 32000
+ },
+ "task": "efficient_kan",
+ "status": "done",
+ "turns": 7,
+ "seconds": 78.5,
+ "usd": 0.154559,
+ "started_et": "2026-11-08T19:13:29-05:00",
+ "ended_et": "2026-11-08T19:14:48-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 3,
+ "executor": "ssh",
+ "solution": "try3.cu",
+ "solution_sha256": "b3ae1ca73daaf47e8d4dfea947d2a04489ffa630db7cb63d1832435a4ce31a8b",
+ "prompt_sha256": "4a3163471ad7f723e374b4b4ddcdd3fc66197f2ae306e709ca65260dae59ac23"
+}

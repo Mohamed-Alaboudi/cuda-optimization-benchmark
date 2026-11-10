@@ -1,0 +1,71 @@
+{
+ "task": "reward_to_go",
+ "signature": "void reference(const float* reward, const bool* done, float gamma, int32_t B, int32_t T, float* output);",
+ "outputs": {
+  "output": {
+   "dtype": "float32",
+   "shape": [
+    "B",
+    "T"
+   ]
+  }
+ },
+ "tolerance": {
+  "atol": 1e-05,
+  "rtol": 1e-05
+ },
+ "link": [],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "B3_T1",
+   "seed": 601,
+   "B": 3,
+   "T": 1,
+   "gamma": 0.5,
+   "done_p": 0.1,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "B7_T999",
+   "seed": 602,
+   "B": 7,
+   "T": 999,
+   "gamma": 0.9,
+   "done_p": 0.1,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "B256_T1024",
+   "seed": 603,
+   "B": 256,
+   "T": 1024,
+   "gamma": 0.99,
+   "done_p": 0.01,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "B1_T8000",
+   "seed": 604,
+   "B": 1,
+   "T": 8000,
+   "gamma": 0.99,
+   "done_p": 0.001,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "B64_T1024",
+   "seed": 605,
+   "B": 64,
+   "T": 1024,
+   "gamma": 0.99,
+   "done_p": 0.1,
+   "small": false,
+   "timed": true
+  }
+ ]
+}

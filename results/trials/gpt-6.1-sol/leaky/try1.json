@@ -1,0 +1,27 @@
+{
+ "trial": "gpt-6.1-sol-leaky-try1",
+ "model": "gpt-6.1-sol",
+ "model_id": "gpt-6.1-sol",
+ "provider": "openai_responses",
+ "params": {
+  "reasoning": {
+   "effort": "high"
+  },
+  "max_output_tokens": 32000
+ },
+ "task": "leaky",
+ "status": "done",
+ "turns": 14,
+ "seconds": 174.9,
+ "usd": 0.136494,
+ "started_et": "2026-11-08T19:03:12-05:00",
+ "ended_et": "2026-11-08T19:06:07-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": 1.0,
+ "error": null,
+ "try_number": 1,
+ "executor": "ssh",
+ "solution": "try1.cu",
+ "solution_sha256": "17771558788b010c18c08a68868810255fb7d5f43422b98225878838bd12b6f6",
+ "prompt_sha256": "650d421741c1947d9258543a75b5217663d22564055bf863b762c40a6cef647e"
+}

@@ -1,0 +1,662 @@
+[
+ {
+  "key": "expert/efficient_kan",
+  "task": "efficient_kan",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 8.915,
+  "pct_of_expert": 100.0,
+  "kernel_ms": 0.14697828463145665,
+  "identical_repeat": true,
+  "allocs_per_call": 4,
+  "passes": [
+   "pass",
+   "pass",
+   "pass"
+  ],
+  "spread": 0.0008425052820928425,
+  "seconds": 49.07
+ },
+ {
+  "key": "expert/fp8_linear",
+  "task": "fp8_linear",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 12.657,
+  "pct_of_expert": 99.9,
+  "kernel_ms": 0.02688960007258824,
+  "identical_repeat": true,
+  "allocs_per_call": 5,
+  "passes": [
+   "pass",
+   "pass",
+   "pass"
+  ],
+  "spread": 0.0010101045098402928,
+  "seconds": 41.31
+ },
+ {
+  "key": "expert/leaky",
+  "task": "leaky",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 31.085,
+  "pct_of_expert": 100.0,
+  "kernel_ms": 0.6695440113544464,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass",
+   "pass",
+   "pass"
+  ],
+  "spread": 0.0004779243208596906,
+  "seconds": 44.83
+ },
+ {
+  "key": "expert/pow_abs_sqrt_mean",
+  "task": "pow_abs_sqrt_mean",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 13.14,
+  "pct_of_expert": 98.8,
+  "kernel_ms": 0.02097454531626268,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass",
+   "pass",
+   "pass"
+  ],
+  "spread": 0.01415548245931797,
+  "seconds": 50.19
+ },
+ {
+  "key": "expert/ppo_clip",
+  "task": "ppo_clip",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 85.676,
+  "pct_of_expert": 99.4,
+  "kernel_ms": 0.004448000221483169,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass",
+   "pass",
+   "pass"
+  ],
+  "spread": 0.013623102396890241,
+  "seconds": 45.47
+ },
+ {
+  "key": "expert/reward_to_go",
+  "task": "reward_to_go",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 262.854,
+  "pct_of_expert": 97.8,
+  "kernel_ms": 0.0032265846545879657,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass",
+   "pass",
+   "pass"
+  ],
+  "spread": 0.06261439908300281,
+  "seconds": 45.92
+ },
+ {
+  "key": "planted/efficient_kan/cached_result",
+  "task": "efficient_kan",
+  "status": "fail",
+  "label": "stale state",
+  "failed_case": "B1_I256_O512",
+  "failed_check": "call2:out",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": false,
+  "allocs_per_call": 4,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 23.38
+ },
+ {
+  "key": "planted/efficient_kan/oob_write",
+  "task": "efficient_kan",
+  "status": "fail",
+  "label": "out-of-bounds write",
+  "failed_case": "B1_I256_O512",
+  "failed_check": "call1:guards",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 4,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 23.27
+ },
+ {
+  "key": "planted/efficient_kan/race",
+  "task": "efficient_kan",
+  "status": "fail",
+  "label": "race",
+  "failed_case": "B64_I100_O300",
+  "failed_check": "sanitizer:racecheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 4,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 23.31
+ },
+ {
+  "key": "planted/efficient_kan/uninit_read",
+  "task": "efficient_kan",
+  "status": "fail",
+  "label": "uninitialized read",
+  "failed_case": "B64_I100_O300",
+  "failed_check": "sanitizer:initcheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 6,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 23.57
+ },
+ {
+  "key": "planted/efficient_kan/wrong_value",
+  "task": "efficient_kan",
+  "status": "fail",
+  "label": "wrong value",
+  "failed_case": "B1_I256_O512",
+  "failed_check": "call1:out",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 4,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 23.31
+ },
+ {
+  "key": "planted/fp8_linear/cached_result",
+  "task": "fp8_linear",
+  "status": "fail",
+  "label": "stale state",
+  "failed_case": "M1_K1024_N4096",
+  "failed_check": "call2:output",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": false,
+  "allocs_per_call": 5,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 20.55
+ },
+ {
+  "key": "planted/fp8_linear/oob_write",
+  "task": "fp8_linear",
+  "status": "fail",
+  "label": "out-of-bounds write",
+  "failed_case": "M1_K1024_N4096",
+  "failed_check": "call1:guards",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 5,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 20.56
+ },
+ {
+  "key": "planted/fp8_linear/race",
+  "task": "fp8_linear",
+  "status": "fail",
+  "label": "race",
+  "failed_case": "M16_K64_N128",
+  "failed_check": "sanitizer:racecheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 5,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 20.65
+ },
+ {
+  "key": "planted/fp8_linear/uninit_read",
+  "task": "fp8_linear",
+  "status": "fail",
+  "label": "uninitialized read",
+  "failed_case": "M16_K64_N128",
+  "failed_check": "sanitizer:initcheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 7,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 21.04
+ },
+ {
+  "key": "planted/fp8_linear/wrong_value",
+  "task": "fp8_linear",
+  "status": "fail",
+  "label": "wrong value",
+  "failed_case": "M1_K1024_N4096",
+  "failed_check": "call1:output",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 5,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 20.63
+ },
+ {
+  "key": "planted/leaky/cached_result",
+  "task": "leaky",
+  "status": "fail",
+  "label": "stale state",
+  "failed_case": "T1_B1_H1021",
+  "failed_check": "call2:spikes",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": false,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 21.02
+ },
+ {
+  "key": "planted/leaky/oob_write",
+  "task": "leaky",
+  "status": "fail",
+  "label": "out-of-bounds write",
+  "failed_case": "T1_B1_H1021",
+  "failed_check": "call1:guards",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 20.88
+ },
+ {
+  "key": "planted/leaky/race",
+  "task": "leaky",
+  "status": "fail",
+  "label": "race",
+  "failed_case": "T33_B65_H129_mem0",
+  "failed_check": "sanitizer:racecheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 20.76
+ },
+ {
+  "key": "planted/leaky/uninit_read",
+  "task": "leaky",
+  "status": "fail",
+  "label": "uninitialized read",
+  "failed_case": "T33_B65_H129_mem0",
+  "failed_check": "sanitizer:initcheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 2,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 21.19
+ },
+ {
+  "key": "planted/leaky/wrong_value",
+  "task": "leaky",
+  "status": "fail",
+  "label": "wrong value",
+  "failed_case": "T1_B1_H1021",
+  "failed_check": "call1:spikes",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 20.95
+ },
+ {
+  "key": "planted/pow_abs_sqrt_mean/cached_result",
+  "task": "pow_abs_sqrt_mean",
+  "status": "fail",
+  "label": "stale state",
+  "failed_case": "b4_h4_w4",
+  "failed_check": "call2:output",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": false,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 23.05
+ },
+ {
+  "key": "planted/pow_abs_sqrt_mean/oob_write",
+  "task": "pow_abs_sqrt_mean",
+  "status": "fail",
+  "label": "out-of-bounds write",
+  "failed_case": "b4_h4_w4",
+  "failed_check": "call1:guards",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 22.68
+ },
+ {
+  "key": "planted/pow_abs_sqrt_mean/race",
+  "task": "pow_abs_sqrt_mean",
+  "status": "fail",
+  "label": "race",
+  "failed_case": "b3_h129_w257",
+  "failed_check": "sanitizer:racecheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 22.77
+ },
+ {
+  "key": "planted/pow_abs_sqrt_mean/uninit_read",
+  "task": "pow_abs_sqrt_mean",
+  "status": "fail",
+  "label": "uninitialized read",
+  "failed_case": "b3_h129_w257",
+  "failed_check": "sanitizer:initcheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 2,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 23.04
+ },
+ {
+  "key": "planted/pow_abs_sqrt_mean/wrong_value",
+  "task": "pow_abs_sqrt_mean",
+  "status": "fail",
+  "label": "wrong value",
+  "failed_case": "b4_h4_w4",
+  "failed_check": "call1:output",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 22.93
+ },
+ {
+  "key": "planted/ppo_clip/cached_result",
+  "task": "ppo_clip",
+  "status": "fail",
+  "label": "stale state",
+  "failed_case": "B1_T1_H1",
+  "failed_check": "call2:output",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": false,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 21.4
+ },
+ {
+  "key": "planted/ppo_clip/oob_write",
+  "task": "ppo_clip",
+  "status": "fail",
+  "label": "out-of-bounds write",
+  "failed_case": "B1_T1_H1",
+  "failed_check": "call1:guards",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 21.3
+ },
+ {
+  "key": "planted/ppo_clip/race",
+  "task": "ppo_clip",
+  "status": "fail",
+  "label": "race",
+  "failed_case": "B1000_T333_H2",
+  "failed_check": "sanitizer:racecheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 21.33
+ },
+ {
+  "key": "planted/ppo_clip/uninit_read",
+  "task": "ppo_clip",
+  "status": "fail",
+  "label": "uninitialized read",
+  "failed_case": "B1000_T333_H2",
+  "failed_check": "sanitizer:initcheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 2,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 21.63
+ },
+ {
+  "key": "planted/ppo_clip/wrong_value",
+  "task": "ppo_clip",
+  "status": "fail",
+  "label": "wrong value",
+  "failed_case": "B1_T1_H1",
+  "failed_check": "call1:output",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 21.44
+ },
+ {
+  "key": "planted/reward_to_go/cached_result",
+  "task": "reward_to_go",
+  "status": "fail",
+  "label": "stale state",
+  "failed_case": "B3_T1",
+  "failed_check": "call2:output",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": false,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 21.67
+ },
+ {
+  "key": "planted/reward_to_go/oob_write",
+  "task": "reward_to_go",
+  "status": "fail",
+  "label": "out-of-bounds write",
+  "failed_case": "B3_T1",
+  "failed_check": "call1:guards",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 21.59
+ },
+ {
+  "key": "planted/reward_to_go/race",
+  "task": "reward_to_go",
+  "status": "fail",
+  "label": "race",
+  "failed_case": "B7_T999",
+  "failed_check": "sanitizer:racecheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 21.27
+ },
+ {
+  "key": "planted/reward_to_go/uninit_read",
+  "task": "reward_to_go",
+  "status": "fail",
+  "label": "uninitialized read",
+  "failed_case": "B7_T999",
+  "failed_check": "sanitizer:initcheck",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 2,
+  "passes": [
+   "pass"
+  ],
+  "spread": null,
+  "seconds": 21.75
+ },
+ {
+  "key": "planted/reward_to_go/wrong_value",
+  "task": "reward_to_go",
+  "status": "fail",
+  "label": "wrong value",
+  "failed_case": "B3_T1",
+  "failed_check": "call1:output",
+  "speedup_vs_torch": null,
+  "pct_of_expert": null,
+  "kernel_ms": null,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "fail"
+  ],
+  "spread": null,
+  "seconds": 21.6
+ }
+]

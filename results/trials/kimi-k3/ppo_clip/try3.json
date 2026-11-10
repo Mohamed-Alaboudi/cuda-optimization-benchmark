@@ -1,0 +1,25 @@
+{
+ "trial": "kimi-k3-ppo_clip-try3",
+ "model": "kimi-k3",
+ "model_id": "k3",
+ "provider": "chat_completions",
+ "params": {
+  "reasoning_effort": "high",
+  "max_tokens": 32000
+ },
+ "task": "ppo_clip",
+ "status": "done",
+ "turns": 18,
+ "seconds": 1140.6,
+ "usd": 0.30251,
+ "started_et": "2026-11-08T19:16:46-05:00",
+ "ended_et": "2026-11-08T19:35:47-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 3,
+ "executor": "ssh",
+ "solution": "try3.cu",
+ "solution_sha256": "00aad95cc23829b4238f9c5b1d0f1fe5a2a9fede418a5ae0f6bad1a81d811743",
+ "prompt_sha256": "40fd9b9d21f1533e6ea522bc839658a932ac0a2b80054ac6e6a0a8420a2e08cb"
+}

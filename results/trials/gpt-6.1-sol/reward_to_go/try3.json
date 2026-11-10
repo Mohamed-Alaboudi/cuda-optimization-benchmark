@@ -1,0 +1,27 @@
+{
+ "trial": "gpt-6.1-sol-reward_to_go-try3",
+ "model": "gpt-6.1-sol",
+ "model_id": "gpt-6.1-sol",
+ "provider": "openai_responses",
+ "params": {
+  "reasoning": {
+   "effort": "high"
+  },
+  "max_output_tokens": 32000
+ },
+ "task": "reward_to_go",
+ "status": "done",
+ "turns": 9,
+ "seconds": 110.2,
+ "usd": 0.082203,
+ "started_et": "2026-11-08T19:17:05-05:00",
+ "ended_et": "2026-11-08T19:18:55-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": 1.0,
+ "error": null,
+ "try_number": 3,
+ "executor": "ssh",
+ "solution": "try3.cu",
+ "solution_sha256": "8e3e36864acd691ed8d05bacda8afd4d269b9418e103920eb9bb97452d305e54",
+ "prompt_sha256": "652588873530cfe5dd662a0e4fb2274e1c4545902b1f92603797e76be75397cb"
+}

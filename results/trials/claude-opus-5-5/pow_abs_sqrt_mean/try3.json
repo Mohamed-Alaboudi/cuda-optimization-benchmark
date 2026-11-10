@@ -1,0 +1,27 @@
+{
+ "trial": "claude-opus-5-5-pow_abs_sqrt_mean-try3",
+ "model": "claude-opus-5-5",
+ "model_id": "claude-opus-5-5",
+ "provider": "anthropic_api",
+ "params": {
+  "output_config": {
+   "effort": "high"
+  },
+  "max_tokens": 32000
+ },
+ "task": "pow_abs_sqrt_mean",
+ "status": "done",
+ "turns": 5,
+ "seconds": 128.7,
+ "usd": 0.136218,
+ "started_et": "2026-11-08T19:11:21-05:00",
+ "ended_et": "2026-11-08T19:13:29-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 3,
+ "executor": "ssh",
+ "solution": "try3.cu",
+ "solution_sha256": "d90af67c4c89606c3433ea2cd8aed275d59d5043664ba1c54caa4a4b28649462",
+ "prompt_sha256": "b7d360b5dc011cd7b008def1739389a5917ef15a1f836f5d96f7402cc953727d"
+}

@@ -1,0 +1,59 @@
+{
+ "task": "fp8_linear",
+ "signature": "void reference(const int32_t M, const int32_t K, const int32_t N, const __nv_fp8_e4m3* x_fp8, float scale_x, const __nv_fp8_e4m3* w_fp8, float scale_w, const __nv_bfloat16* bias, __nv_bfloat16* output);",
+ "outputs": {
+  "output": {
+   "dtype": "bfloat16",
+   "shape": [
+    "M",
+    "N"
+   ]
+  }
+ },
+ "tolerance": {
+  "atol": 0.01,
+  "rtol": 0.01
+ },
+ "link": [
+  "-lcublasLt"
+ ],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "M1_K1024_N4096",
+   "seed": 401,
+   "M": 1,
+   "K": 1024,
+   "N": 4096,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "M16_K64_N128",
+   "seed": 402,
+   "M": 16,
+   "K": 64,
+   "N": 128,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "M333_K1000_N3000",
+   "seed": 403,
+   "M": 333,
+   "K": 1000,
+   "N": 3000,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "M2048_K1024_N4096",
+   "seed": 404,
+   "M": 2048,
+   "K": 1024,
+   "N": 4096,
+   "small": false,
+   "timed": true
+  }
+ ]
+}

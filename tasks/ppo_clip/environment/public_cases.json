@@ -1,0 +1,40 @@
+{
+ "task": "ppo_clip",
+ "signature": "void reference(const int32_t B, const int32_t T, const int32_t H, const float* current_log_prob, const float* old_log_prob, const float* advantage, const float clip_epsilon, float* output);",
+ "outputs": {
+  "output": {
+   "dtype": "float32",
+   "shape": [
+    6
+   ]
+  }
+ },
+ "tolerance": {
+  "atol": 1e-05,
+  "rtol": 0.0001
+ },
+ "link": [],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "B7_T13_H3",
+   "seed": 51,
+   "B": 7,
+   "T": 13,
+   "H": 3,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "B4_T50_H1_wide",
+   "seed": 52,
+   "B": 4,
+   "T": 50,
+   "H": 1,
+   "delta_std": 1.0,
+   "clip_epsilon": 0.1,
+   "small": true,
+   "timed": false
+  }
+ ]
+}

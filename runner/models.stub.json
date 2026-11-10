@@ -1,0 +1,26 @@
+{
+ "models": [
+  {
+   "name": "stub-ok",
+   "provider": "stub",
+   "model": "stub",
+   "script": "ok",
+   "price": {
+    "input": 2,
+    "output": 10
+   },
+   "trial_cap_usd": 1.0
+  },
+  {
+   "name": "stub-loop",
+   "provider": "stub",
+   "model": "stub",
+   "script": "loop",
+   "price": {
+    "input": 2,
+    "output": 10
+   },
+   "trial_cap_usd": 0.5
+  }
+ ]
+}

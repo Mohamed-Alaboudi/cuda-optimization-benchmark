@@ -1,0 +1,66 @@
+{
+ "_note": "Model ids and settings for the agent-loop run. Prices in USD per 1M tokens, checked 2026-11-08 at the source URL. Keys come from the environment variable in key_env; Temperature is not sent (provider default).",
+ "models": [
+  {
+   "name": "gpt-6.1-sol",
+   "provider": "openai_responses",
+   "key_env": "OPENAI_API_KEY",
+   "model": "gpt-6.1-sol",
+   "params": {
+    "reasoning": {
+     "effort": "high"
+    },
+    "max_output_tokens": 32000
+   },
+   "trial_cap_usd": 1.0,
+   "max_concurrency": 4,
+   "price": {
+    "input": 2.0,
+    "cached_input": 0.1,
+    "output": 10.0,
+    "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "checked": "2026-11-08"
+   }
+  },
+  {
+   "name": "claude-opus-5-5",
+   "_note": "the benchmark run called the same model through Anthropic's API; set ANTHROPIC_API_KEY to rerun",
+   "provider": "anthropic_api",
+   "key_env": "ANTHROPIC_API_KEY",
+   "model": "claude-opus-5-5",
+   "params": {
+    "output_config": {
+     "effort": "high"
+    },
+    "max_tokens": 32000
+   },
+   "max_concurrency": 4,
+   "price": {
+    "input": 4.0,
+    "cached_input": 0.4,
+    "output": 20.0,
+    "source": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+    "checked": "2026-11-08"
+   }
+  },
+  {
+   "name": "kimi-k3",
+   "provider": "chat_completions",
+   "key_env": "KIMI_API_KEY",
+   "base_url": "https://api.kimi.com/coding/v1",
+   "model": "k3",
+   "params": {
+    "reasoning_effort": "high",
+    "max_tokens": 32000
+   },
+   "max_concurrency": 4,
+   "price": {
+    "input": 3.0,
+    "cached_input": 0.3,
+    "output": 15.0,
+    "source": "https://models.litellm.ai/models/kimi-k3",
+    "checked": "2026-11-08"
+   }
+  }
+ ]
+}

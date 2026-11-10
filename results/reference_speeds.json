@@ -1,0 +1,11 @@
+{
+ "_note": "Speed of the current reference kernels (reference/<task>/solution.cu), x vs PyTorch eager on the timed input, from the GPU grading run on Nov 8, 2026 (micro/optimize/grade_logs; ppo_clip = median of 4 timings). Used by report/make_report.py for '% of reference speed'.",
+ "per_task": {
+  "pow_abs_sqrt_mean": 13.223,
+  "leaky": 15.696,
+  "efficient_kan": 8.844,
+  "fp8_linear": 12.075,
+  "ppo_clip": 52.105,
+  "reward_to_go": 200.879
+ }
+}

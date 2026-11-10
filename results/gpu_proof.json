@@ -1,0 +1,286 @@
+{
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+ "env": {
+  "nvidia_smi": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition, 580.65.06, 97887 MiB, 12.0",
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Fri_Feb_21_20:23:50_PST_2025\nCuda compilation tools, release 12.8, V12.8.93\nBuild cuda_12.8.r12.8/compiler.35583870_0",
+  "compute_sanitizer": "NVIDIA (R) Compute Sanitizer\nCopyright (c) 2020-2025 NVIDIA Corporation\nVersion 2025.1.0.0 (build 35583870) (public-release)",
+  "python": "3.12.3",
+  "torch": "2.9.1+cu128 12.8",
+  "date": "2026-11-09 04:23 UTC"
+ },
+ "arch": "sm_120",
+ "references": {
+  "efficient_kan": {
+   "status": "pass",
+   "label": null,
+   "failed_case": null,
+   "failed_check": null,
+   "speedup_vs_torch": 8.915,
+   "pct_of_expert": 100.0,
+   "kernel_ms": 0.14697828463145665,
+   "spread": 0.0008425052820928425,
+   "identical_repeat": true,
+   "allocs_per_call": 4,
+   "seconds": 49.07,
+   "verdict": "pass"
+  },
+  "fp8_linear": {
+   "status": "pass",
+   "label": null,
+   "failed_case": null,
+   "failed_check": null,
+   "speedup_vs_torch": 12.657,
+   "pct_of_expert": 99.9,
+   "kernel_ms": 0.02688960007258824,
+   "spread": 0.0010101045098402928,
+   "identical_repeat": true,
+   "allocs_per_call": 5,
+   "seconds": 41.31,
+   "verdict": "pass"
+  },
+  "leaky": {
+   "status": "pass",
+   "label": null,
+   "failed_case": null,
+   "failed_check": null,
+   "speedup_vs_torch": 31.085,
+   "pct_of_expert": 100.0,
+   "kernel_ms": 0.6695440113544464,
+   "spread": 0.0004779243208596906,
+   "identical_repeat": true,
+   "allocs_per_call": 0,
+   "seconds": 44.83,
+   "verdict": "pass"
+  },
+  "pow_abs_sqrt_mean": {
+   "status": "pass",
+   "label": null,
+   "failed_case": null,
+   "failed_check": null,
+   "speedup_vs_torch": 13.14,
+   "pct_of_expert": 98.8,
+   "kernel_ms": 0.02097454531626268,
+   "spread": 0.01415548245931797,
+   "identical_repeat": true,
+   "allocs_per_call": 0,
+   "seconds": 50.19,
+   "verdict": "pass"
+  },
+  "ppo_clip": {
+   "status": "pass",
+   "label": null,
+   "failed_case": null,
+   "failed_check": null,
+   "speedup_vs_torch": 85.676,
+   "pct_of_expert": 99.4,
+   "kernel_ms": 0.004448000221483169,
+   "spread": 0.013623102396890241,
+   "identical_repeat": true,
+   "allocs_per_call": 0,
+   "seconds": 45.47,
+   "verdict": "pass"
+  },
+  "reward_to_go": {
+   "status": "pass",
+   "label": null,
+   "failed_case": null,
+   "failed_check": null,
+   "speedup_vs_torch": 262.854,
+   "pct_of_expert": 97.8,
+   "kernel_ms": 0.0032265846545879657,
+   "spread": 0.06261439908300281,
+   "identical_repeat": true,
+   "allocs_per_call": 0,
+   "seconds": 45.92,
+   "verdict": "pass"
+  }
+ },
+ "planted": {
+  "efficient_kan/wrong_value": {
+   "expect": "fail / wrong value",
+   "status": "fail",
+   "label": "wrong value",
+   "ok": true
+  },
+  "efficient_kan/cached_result": {
+   "expect": "fail / stale state",
+   "status": "fail",
+   "label": "stale state",
+   "ok": true
+  },
+  "efficient_kan/oob_write": {
+   "expect": "fail / out-of-bounds write",
+   "status": "fail",
+   "label": "out-of-bounds write",
+   "ok": true
+  },
+  "efficient_kan/race": {
+   "expect": "fail / race",
+   "status": "fail",
+   "label": "race",
+   "ok": true
+  },
+  "efficient_kan/uninit_read": {
+   "expect": "fail / uninitialized read",
+   "status": "fail",
+   "label": "uninitialized read",
+   "ok": true
+  },
+  "fp8_linear/wrong_value": {
+   "expect": "fail / wrong value",
+   "status": "fail",
+   "label": "wrong value",
+   "ok": true
+  },
+  "fp8_linear/cached_result": {
+   "expect": "fail / stale state",
+   "status": "fail",
+   "label": "stale state",
+   "ok": true
+  },
+  "fp8_linear/oob_write": {
+   "expect": "fail / out-of-bounds write",
+   "status": "fail",
+   "label": "out-of-bounds write",
+   "ok": true
+  },
+  "fp8_linear/race": {
+   "expect": "fail / race",
+   "status": "fail",
+   "label": "race",
+   "ok": true
+  },
+  "fp8_linear/uninit_read": {
+   "expect": "fail / uninitialized read",
+   "status": "fail",
+   "label": "uninitialized read",
+   "ok": true
+  },
+  "leaky/wrong_value": {
+   "expect": "fail / wrong value",
+   "status": "fail",
+   "label": "wrong value",
+   "ok": true
+  },
+  "leaky/cached_result": {
+   "expect": "fail / stale state",
+   "status": "fail",
+   "label": "stale state",
+   "ok": true
+  },
+  "leaky/oob_write": {
+   "expect": "fail / out-of-bounds write",
+   "status": "fail",
+   "label": "out-of-bounds write",
+   "ok": true
+  },
+  "leaky/race": {
+   "expect": "fail / race",
+   "status": "fail",
+   "label": "race",
+   "ok": true
+  },
+  "leaky/uninit_read": {
+   "expect": "fail / uninitialized read",
+   "status": "fail",
+   "label": "uninitialized read",
+   "ok": true
+  },
+  "pow_abs_sqrt_mean/wrong_value": {
+   "expect": "fail / wrong value",
+   "status": "fail",
+   "label": "wrong value",
+   "ok": true
+  },
+  "pow_abs_sqrt_mean/cached_result": {
+   "expect": "fail / stale state",
+   "status": "fail",
+   "label": "stale state",
+   "ok": true
+  },
+  "pow_abs_sqrt_mean/oob_write": {
+   "expect": "fail / out-of-bounds write",
+   "status": "fail",
+   "label": "out-of-bounds write",
+   "ok": true
+  },
+  "pow_abs_sqrt_mean/race": {
+   "expect": "fail / race",
+   "status": "fail",
+   "label": "race",
+   "ok": true
+  },
+  "pow_abs_sqrt_mean/uninit_read": {
+   "expect": "fail / uninitialized read",
+   "status": "fail",
+   "label": "uninitialized read",
+   "ok": true
+  },
+  "ppo_clip/wrong_value": {
+   "expect": "fail / wrong value",
+   "status": "fail",
+   "label": "wrong value",
+   "ok": true
+  },
+  "ppo_clip/cached_result": {
+   "expect": "fail / stale state",
+   "status": "fail",
+   "label": "stale state",
+   "ok": true
+  },
+  "ppo_clip/oob_write": {
+   "expect": "fail / out-of-bounds write",
+   "status": "fail",
+   "label": "out-of-bounds write",
+   "ok": true
+  },
+  "ppo_clip/race": {
+   "expect": "fail / race",
+   "status": "fail",
+   "label": "race",
+   "ok": true
+  },
+  "ppo_clip/uninit_read": {
+   "expect": "fail / uninitialized read",
+   "status": "fail",
+   "label": "uninitialized read",
+   "ok": true
+  },
+  "reward_to_go/wrong_value": {
+   "expect": "fail / wrong value",
+   "status": "fail",
+   "label": "wrong value",
+   "ok": true
+  },
+  "reward_to_go/cached_result": {
+   "expect": "fail / stale state",
+   "status": "fail",
+   "label": "stale state",
+   "ok": true
+  },
+  "reward_to_go/oob_write": {
+   "expect": "fail / out-of-bounds write",
+   "status": "fail",
+   "label": "out-of-bounds write",
+   "ok": true
+  },
+  "reward_to_go/race": {
+   "expect": "fail / race",
+   "status": "fail",
+   "label": "race",
+   "ok": true
+  },
+  "reward_to_go/uninit_read": {
+   "expect": "fail / uninitialized read",
+   "status": "fail",
+   "label": "uninitialized read",
+   "ok": true
+  }
+ },
+ "summary": {
+  "references_pass": 6,
+  "references": 6,
+  "planted_as_expected": 30,
+  "planted": 30
+ }
+}

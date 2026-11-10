@@ -1,0 +1,41 @@
+{
+ "task": "reward_to_go",
+ "signature": "void reference(const float* reward, const bool* done, float gamma, int32_t B, int32_t T, float* output);",
+ "outputs": {
+  "output": {
+   "dtype": "float32",
+   "shape": [
+    "B",
+    "T"
+   ]
+  }
+ },
+ "tolerance": {
+  "atol": 1e-05,
+  "rtol": 1e-05
+ },
+ "link": [],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "B4_T37",
+   "seed": 61,
+   "B": 4,
+   "T": 37,
+   "gamma": 0.9,
+   "done_p": 0.1,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "B2_T300",
+   "seed": 62,
+   "B": 2,
+   "T": 300,
+   "gamma": 0.99,
+   "done_p": 0.01,
+   "small": true,
+   "timed": false
+  }
+ ]
+}

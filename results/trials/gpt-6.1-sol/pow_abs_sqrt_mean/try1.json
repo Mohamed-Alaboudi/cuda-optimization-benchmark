@@ -1,0 +1,27 @@
+{
+ "trial": "gpt-6.1-sol-pow_abs_sqrt_mean-try1",
+ "model": "gpt-6.1-sol",
+ "model_id": "gpt-6.1-sol",
+ "provider": "openai_responses",
+ "params": {
+  "reasoning": {
+   "effort": "high"
+  },
+  "max_output_tokens": 32000
+ },
+ "task": "pow_abs_sqrt_mean",
+ "status": "done",
+ "turns": 13,
+ "seconds": 150.9,
+ "usd": 0.120755,
+ "started_et": "2026-11-08T19:03:12-05:00",
+ "ended_et": "2026-11-08T19:05:43-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": 1.0,
+ "error": null,
+ "try_number": 1,
+ "executor": "ssh",
+ "solution": "try1.cu",
+ "solution_sha256": "8a0155f2cc2de6d088c63d660efd69a16d60d0a9a84d62ae3812d547df7dd3b7",
+ "prompt_sha256": "b7d360b5dc011cd7b008def1739389a5917ef15a1f836f5d96f7402cc953727d"
+}

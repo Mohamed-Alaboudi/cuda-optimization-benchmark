@@ -1,0 +1,25 @@
+{
+ "trial": "kimi-k3-leaky-try2",
+ "model": "kimi-k3",
+ "model_id": "k3",
+ "provider": "chat_completions",
+ "params": {
+  "reasoning_effort": "high",
+  "max_tokens": 32000
+ },
+ "task": "leaky",
+ "status": "done",
+ "turns": 9,
+ "seconds": 99.0,
+ "usd": 0.104183,
+ "started_et": "2026-11-08T19:09:42-05:00",
+ "ended_et": "2026-11-08T19:11:21-05:00",
+ "wall_cap_s": 1200.0,
+ "trial_cap_usd": null,
+ "error": null,
+ "try_number": 2,
+ "executor": "ssh",
+ "solution": "try2.cu",
+ "solution_sha256": "92a4129a4ee31055cc25baefa5cfb1f214a23c84ddf111731c1af9dd05a9b104",
+ "prompt_sha256": "650d421741c1947d9258543a75b5217663d22564055bf863b762c40a6cef647e"
+}

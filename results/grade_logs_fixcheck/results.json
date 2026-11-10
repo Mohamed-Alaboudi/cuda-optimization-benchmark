@@ -1,0 +1,218 @@
+[
+ {
+  "key": "claude-opus-5-5/leaky/try1",
+  "task": "leaky",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 12.254,
+  "pct_of_expert": 93.2,
+  "kernel_ms": 0.8917199969291687,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.04817727240734482,
+  "seconds": 21.97
+ },
+ {
+  "key": "claude-opus-5-5/ppo_clip/try1",
+  "task": "ppo_clip",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 7.189,
+  "pct_of_expert": 510.5,
+  "kernel_ms": 0.030807225934920773,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.000977256087210998,
+  "seconds": 21.62
+ },
+ {
+  "key": "expert/efficient_kan/try1",
+  "task": "efficient_kan",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 3.607,
+  "pct_of_expert": 99.9,
+  "kernel_ms": 0.36233599980672204,
+  "identical_repeat": true,
+  "allocs_per_call": 2,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.00019138643679950107,
+  "seconds": 23.18
+ },
+ {
+  "key": "expert/fp8_linear/try1",
+  "task": "fp8_linear",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 2.881,
+  "pct_of_expert": 100.2,
+  "kernel_ms": 0.111772444513109,
+  "identical_repeat": true,
+  "allocs_per_call": 5,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.05371940091620364,
+  "seconds": 19.51
+ },
+ {
+  "key": "expert/leaky/try1",
+  "task": "leaky",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 12.903,
+  "pct_of_expert": 100.1,
+  "kernel_ms": 0.832040011882782,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.00387809838447839,
+  "seconds": 19.71
+ },
+ {
+  "key": "expert/pow_abs_sqrt_mean/try1",
+  "task": "pow_abs_sqrt_mean",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 12.45,
+  "pct_of_expert": 100.0,
+  "kernel_ms": 0.021951110826598272,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.018640056988068032,
+  "seconds": 21.53
+ },
+ {
+  "key": "expert/ppo_clip/try1",
+  "task": "ppo_clip",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 0.558,
+  "pct_of_expert": 58.3,
+  "kernel_ms": 0.39954400062561035,
+  "identical_repeat": true,
+  "allocs_per_call": 2,
+  "passes": [
+   "pass"
+  ],
+  "spread": 10.87663475193918,
+  "seconds": 20.39
+ },
+ {
+  "key": "expert/reward_to_go/try1",
+  "task": "reward_to_go",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 72.38,
+  "pct_of_expert": 100.2,
+  "kernel_ms": 0.006150165008842398,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.0012668325261233626,
+  "seconds": 21.03
+ },
+ {
+  "key": "gpt-6.1-sol/fp8_linear/try1",
+  "task": "fp8_linear",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 12.003,
+  "pct_of_expert": 417.1,
+  "kernel_ms": 0.026856827324834364,
+  "identical_repeat": true,
+  "allocs_per_call": 5,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.002008525739417344,
+  "seconds": 19.09
+ },
+ {
+  "key": "gpt-6.1-sol/pow_abs_sqrt_mean/try1",
+  "task": "pow_abs_sqrt_mean",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 13.188,
+  "pct_of_expert": 105.2,
+  "kernel_ms": 0.020749090747399765,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.009798465811408752,
+  "seconds": 21.89
+ },
+ {
+  "key": "kimi-k3/efficient_kan/try1",
+  "task": "efficient_kan",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 3.471,
+  "pct_of_expert": 97.0,
+  "kernel_ms": 0.37299734354019165,
+  "identical_repeat": true,
+  "allocs_per_call": 1,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.004360394208917873,
+  "seconds": 22.24
+ },
+ {
+  "key": "kimi-k3/reward_to_go/try1",
+  "task": "reward_to_go",
+  "status": "pass",
+  "label": null,
+  "failed_case": null,
+  "failed_check": null,
+  "speedup_vs_torch": 31.184,
+  "pct_of_expert": 42.8,
+  "kernel_ms": 0.01436707663994569,
+  "identical_repeat": true,
+  "allocs_per_call": 0,
+  "passes": [
+   "pass"
+  ],
+  "spread": 0.0005422188686965423,
+  "seconds": 19.82
+ }
+]

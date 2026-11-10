@@ -1,0 +1,73 @@
+{
+ "task": "pow_abs_sqrt_mean",
+ "signature": "void reference(const float* inp, const float* target, int64_t batch_size, int64_t height, int64_t width, float* output);",
+ "outputs": {
+  "output": {
+   "dtype": "float32",
+   "shape": []
+  }
+ },
+ "tolerance": {
+  "atol": 0.001,
+  "rtol": 0.001
+ },
+ "link": [],
+ "status": "inputs and tolerance as run",
+ "cases": [
+  {
+   "name": "b4_h4_w4",
+   "seed": 101,
+   "batch_size": 4,
+   "height": 4,
+   "width": 4,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "b16_h4_w8",
+   "seed": 102,
+   "batch_size": 16,
+   "height": 4,
+   "width": 8,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "b1_h1_w1",
+   "seed": 103,
+   "batch_size": 1,
+   "height": 1,
+   "width": 1,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "b3_h129_w257",
+   "seed": 104,
+   "batch_size": 3,
+   "height": 129,
+   "width": 257,
+   "small": true,
+   "timed": false
+  },
+  {
+   "name": "b8_h64_w64_scale1000",
+   "seed": 105,
+   "batch_size": 8,
+   "height": 64,
+   "width": 64,
+   "scale": 1000.0,
+   "small": false,
+   "timed": false
+  },
+  {
+   "name": "b16_h512_w512",
+   "seed": 106,
+   "batch_size": 16,
+   "height": 512,
+   "width": 512,
+   "small": false,
+   "timed": true
+  }
+ ]
+}
