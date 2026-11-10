@@ -1,18 +1,23 @@
-# CUDA Optimization Benchmark: expert kernels vs frontier AI agents
+# Kernel Optimization Benchmark
 
-Six tasks, each asking for a CUDA kernel that replaces a real PyTorch operation: exact on every input, memory-safe, and faster than PyTorch. Three frontier AI models attempted every task alone in an agent loop (the model can run commands, edit files and time its own kernel, like an engineer working; 20 minutes per try, 3 tries per task). Every kernel was then graded on the same GPU against two bars: PyTorch itself, and a hand-tuned expert kernel.
+Domain-expert CUDA kernels vs frontier AI agents.
 
-![Speed of model-written kernels as a share of the expert kernel, per task](assets/results.gif)
+- **What:** 6 CUDA kernel tasks, each replacing a real PyTorch operation.
+- **Why:** measure how close frontier AI agents get to a domain expert's hand-tuned kernels, and where they fall short. CUDA because it is the language most production AI kernels are written in; the gap measured here transfers to other kernel work.
+- **How:** each model works alone in an agent loop (it can run commands, edit files and time its own kernel, like an engineer working): 20 minutes per try, 3 tries per task.
+- **Measured:** correctness on every input plus memory safety, and speed against two bars: PyTorch itself, and the expert kernel. All on the same GPU.
+
+![Speed of model-written kernels as a share of the expert kernel, per task](assets/per_task.png)
 
 ## Results
 
 All 54 attempts (3 models x 6 tasks x 3 tries) produced correct, memory-safe kernels. The gap is speed:
 
-| Model | Median speed vs PyTorch | Median speed vs the expert kernel | Range across tasks |
-|---|---|---|---|
-| gpt-6.1-sol (reasoning effort high) | 13.8x | 🟢 92% | 55% to 101% |
-| claude-opus-5-5 (effort high) | 9.7x | 🔴 40% | 14% to 99% |
-| kimi-k3 (thinking, effort high) | 9.3x | 🔴 49% | 2% to 91% |
+| Model | Average speed vs the expert kernel | Range across tasks |
+|---|---|---|
+| gpt-6.1-sol (high) | 87% | 55% to 101% |
+| claude-opus-5-5 (high) | 51% | 14% to 99% |
+| kimi-k3 (high) | 52% | 2% to 91% |
 
 Per task (average of the 3 tries, speed as a share of the expert kernel):
 
@@ -24,8 +29,6 @@ Per task (average of the 3 tries, speed as a share of the expert kernel):
 | `fp8_linear` | 12.1x | 🟢 93% | 🟡 62% | 🟡 66% |
 | `ppo_clip` | 52.1x | 🟡 70% | 🔴 17% | 🔴 11% |
 | `reward_to_go` | 200.9x | 🟢 99% | 🟡 63% | 🔴 24% |
-
-🟢 at least 90% of expert speed · 🟡 50-89% · 🔴 under 50%. Every kernel was timed in the same grading run on the same GPU, so the comparisons are apples to apples. Full per-try data and every kernel the models wrote: `results/`.
 
 ## The 6 tasks
 
@@ -42,16 +45,22 @@ Per task (average of the 3 tries, speed as a share of the expert kernel):
 
 Every failure was speed, not correctness:
 
-- `pow_abs_sqrt_mean` (Opus 40%): Opus used the exact-but-slow square root; the task's tolerance allowed the fast hardware instruction the expert kernel uses.
-- `leaky` (83-95%): the closest task. The slower tries walk the time steps one by one without packing memory reads.
-- `efficient_kan` (Opus 40%, Kimi 42%): the slow versions chain many small library calls; the expert kernel combines them into one custom step.
-- `fp8_linear` (Opus 62%, Kimi 66%): no model removed the fixed cost of launching each call; the expert kernel records the whole call sequence once and replays it.
-- `ppo_clip` (Opus 17%, Kimi 11%): the slow tries do their math in double precision, which this GPU handles slowly.
-- `reward_to_go` (Kimi 2% to 54% across tries): the slow ones assign one thread per row, so memory is read in a scattered pattern; the expert kernel reads it in bulk.
+| Task | Weakest result | Why it was slow |
+|---|---|---|
+| `pow_abs_sqrt_mean` | Opus, 40% | Used the exact-but-slow square root; the tolerance allows the fast hardware one |
+| `leaky` | Kimi, 83% (closest task) | Walked the time steps one by one without packing memory reads |
+| `efficient_kan` | Opus, 40% | Chained many small library calls instead of one fused step |
+| `fp8_linear` | Opus 62%, Kimi 66% | Left the fixed per-call launch cost in place |
+| `ppo_clip` | Kimi, 11% | Did the math in double precision, slow on this GPU |
+| `reward_to_go` | Kimi, 2% | One thread per row, so memory is read in a scattered pattern |
 
 ## Conclusion
 
-All 54 model kernels were correct and memory-safe; none matched the expert kernels on speed. Medians land at 40-92% of the expert kernel, and the same model on the same task ranged from 2% to 54% between tries. Correctness is solved; optimization judgment is not.
+- All 54 model kernels were correct and memory-safe. None matched the expert kernels on speed.
+- The same model on the same task swung from 2% to 54% of expert speed between tries.
+- The misses were judgment calls, not knowledge: every technique the expert kernels use is well documented.
+- These 6 ops are common patterns (reductions, sequential time loops, fused layers), so the gap measured here applies to kernel work beyond these tasks.
+- Correctness is solved; optimization judgment is not.
 
 ## Grading
 
@@ -92,7 +101,7 @@ python run_eval.py pod terminate
 - **Keys** (names only, in `.env.example`): `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `KIMI_API_KEY`, `RUNPOD_API_KEY`. No key goes on the pod.
 - **GPU host:** NVIDIA RTX PRO 6000 Blackwell Workstation Edition (sm_120), driver 580.178.04, CUDA 12.8 (nvcc 12.8.93), PyTorch 2.9.1+cu128, image `runpod/pytorch:1.5.1-cu1281-torch291-ubuntu2404`. GPU-side packages: `requirements-gpu.txt`.
 - **Regrade without a GPU:** `results/grade_logs/` holds every grader measurement, so `regrade` rebuilds every verdict and table.
-- The chart and GIF are generated from the results by `report/make_charts.py`; the tables by `report/make_report.py`.
+- The chart is generated from the results by `report/make_charts.py`; the tables by `report/make_report.py`.
 - Verified from a clean copy on a fresh pod: the grader builds its own tools and 12 of 12 verdicts match the main run.
 
 </details>
